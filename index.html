@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-review-collector</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Review Collector</h1>
+        <p>Designed for collecting your ratings and reviews.</p>
+    </header>
+
+    <div id="container">
+        <div id="collector">
+            <h2>Username</h2>
+            <input type="text" name="" id="user-box" required placeholder="  Enter your username...">
+        
+            <h2>Review</h2>
+            <textarea name="" id="review-box" cols="50" rows="10" required placeholder="  Type your review here...">
+            </textarea>
+
+            <div class="rating">
+                <h2><span class="stars" onclick="color(1)">★</span>
+                <span class="stars" onclick="color(2)">★</span>
+                <span class="stars" onclick="color(3)">★</span>
+                <span class="stars" onclick="color(4)">★</span>
+                <span class="stars" onclick="color(5)">★</span>
+                <h6 id="output">Rating is: 0/5</h6></h2>
+            </div>
+
+            <button id="submitBtn" onclick="createCard()">Submit</button>
+        </div>
+
+        <div id="displayer">
+            <h2>Total Reviews</h2>
+         <div id="review-list"></div>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

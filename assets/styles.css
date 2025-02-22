@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins";
+    background-color: #0B192C;
+}
+
+header{
+    display: block;
+    padding: 32px;
+    color: #dcdcdc;
+}
+
+#container{
+    display: flex;
+    align-items: flex-start;
+}
+
+#collector, #displayer{
+    color: #dcdcdc;
+    width: 50%;
+    height: 100%;
+    padding: 32px;
+    display: grid;
+    gap: 16px;
+    border-radius: 12px;
+
+}
+
+#user-box, #review-box, #submitBtn{
+    height: 100%;
+    border-radius: 8px;
+    font-family: "Poppins";
+    font-weight: 600;
+    background-color: #dcdcdc;
+}
+
+#review-box{
+    resize: none;
+}
+
+#submitBtn:hover{
+    cursor: pointer;
+    background-color: #00879E;
+    color: #dcdcdc;
+    
+}
+
+.rating:hover{
+    cursor: pointer;
+}
+
+/* #displayer{
+    width: 50vw;
+    padding: 32px;
+} */
+
+#review-list{
+    display: flex;
+
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    width: auto;
+}
