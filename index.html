@@ -22,23 +22,21 @@
             <textarea name="" id="review-box" cols="50" rows="10" required placeholder="  Type your review here...">
             </textarea>
 
-            <div class="rating">
-                <h2><span class="stars" onclick="color(1)">★</span>
-                <span class="stars" onclick="color(2)">★</span>
-                <span class="stars" onclick="color(3)">★</span>
-                <span class="stars" onclick="color(4)">★</span>
-                <span class="stars" onclick="color(5)">★</span>
-                <h6 id="output">Rating is: 0/5</h6></h2>
+            <div id="rating">
+                <span class="stars" id="star-1" onclick="color(1)">★</span>
+                <span class="stars" id="star-2" onclick="color(2)">★</span>
+                <span class="stars" id="star-3" onclick="color(3)">★</span>
+                <span class="stars" id="star-4" onclick="color(4)">★</span>
+                <span class="stars" id="star-5" onclick="color(5)">★</span>
             </div>
 
-            <button id="submitBtn" onclick="createCard()">Submit</button>
+            <button id="submitBtn" onclick="createReview()">Submit</button>
         </div>
 
         <div id="displayer">
             <h2>Total Reviews</h2>
-         <div id="review-list"></div>
+            <ul id="reviews"></ul>
         </div>
-    </div>
     <script src="./assets/script.js"></script>
 </body>
 </html>
